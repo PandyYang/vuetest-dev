@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: vuetest-dev
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/vuetest-dev?characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&rewriteBatchedStatements=true
+    username: root
+    password: root
+server:
+  port: 8084
+mybatis:
+  mapper-locations: classpath:com/dida/mapper/*.xml
+  type-aliases-package: com.dida.vuetestdev.entity
