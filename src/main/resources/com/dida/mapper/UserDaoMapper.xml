@@ -7,4 +7,8 @@
         from t_user;
     </select>
 
+    <insert id="save" parameterType="User" useGeneratedKeys="true" keyProperty="id">
+        insert into t_user values(#{id}, #{name}, #{bir}, #{address}, #{sex})
+    </insert>
+
 </mapper>
